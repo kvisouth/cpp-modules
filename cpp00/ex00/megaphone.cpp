@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/29 15:27:19 by kvisouth          #+#    #+#             */
-/*   Updated: 2023/11/30 17:05:15 by kvisouth         ###   ########.fr       */
+/*   Updated: 2023/12/01 15:01:20 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,22 +26,21 @@ $>
 
 #include <iostream>
 
+using namespace std;
+
 int main(int ac, char **av)
 {
-	// If there is no arguments after ./megaphone, it prints this.
 	if (ac == 1)
-		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
-
-	// If there is arguments after ./megaphone, it prints them in uppercase using 'toupper' on each character.
+		cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
 	else
 	{
 		for (int i = 1; i < ac; i++)
 		{
 			for (int j = 0; av[i][j]; j++)
-				std::cout << (char)toupper(av[i][j]); 
+				cout << (char)toupper(av[i][j]); 
 		}
 	}
-	std::cout << std::endl; // This 'cout' is to print a new line.
+	cout << endl;
 	return 0;
 }
 
