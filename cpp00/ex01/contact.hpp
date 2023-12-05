@@ -14,6 +14,9 @@ class Contact
         int index;
     public:
         Contact();
+        ~Contact();
+        void add(void);
+
 };
 
 #endif

@@ -12,8 +12,9 @@ class PhoneBook
         const int max;
     public:
         PhoneBook();
-        
-
+        ~PhoneBook();
+        void add(void);
+        void search(void);
 };
 
 
