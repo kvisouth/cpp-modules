@@ -59,3 +59,12 @@ void Contact::create_contact(int i)
 	}
 	index = i;
 }
+
+// Print all contacts
+void Contact::print_contacts(void)
+{
+	std::cout << "index : " << index << std::endl;
+	std::cout << "First name : " << firstname << std::endl;
+	std::cout << "Last name : " << lastname << std::endl;
+	std::cout << "Nickname : " << nickname << std::endl;
+}

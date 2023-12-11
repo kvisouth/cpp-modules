@@ -16,6 +16,7 @@ class Contact
         Contact();
         ~Contact();
         void create_contact(int i);
+        void print_contacts(void);
 
 };
 

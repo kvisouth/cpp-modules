@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/05 15:38:52 by kvisouth          #+#    #+#             */
-/*   Updated: 2023/12/11 15:24:21 by kvisouth         ###   ########.fr       */
+/*   Updated: 2023/12/11 15:47:11 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,9 @@ void PhoneBook::add(void)
 // 'SEARCH' command
 void PhoneBook::search(void)
 {
-    std::cout << "Call SEARCH method" << std::endl;
+    for (int i = 0; i < 8; i++)
+    {
+        std::cout << "---------------------------------------------" << std::endl;
+        this->contacts[i].print_contacts();
+    }
 }
