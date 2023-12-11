@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 17:24:37 by kvisouth          #+#    #+#             */
-/*   Updated: 2023/12/05 16:07:23 by kvisouth         ###   ########.fr       */
+/*   Updated: 2023/12/11 16:26:05 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int main()
 
 		for (int i = 0; i < input.length(); i++)
 			input[i] = toupper(input[i]);
+
 		if (input == "EXIT")
 			break;
 
@@ -41,5 +42,6 @@ int main()
 			std::cout << "commands: ADD, SEARCH, EXIT" << std::endl;
 
 	}
+	std::cout << std::endl;
 	return 0;
 }

@@ -18,7 +18,7 @@ void Contact::create_contact(int i)
 		std::cout << "First name : ";
 		std::getline(std::cin, input);
 		if (std::cin.eof())
-			break;
+			return ;
 		firstname = input;
 	}
 	input = "";
@@ -27,7 +27,7 @@ void Contact::create_contact(int i)
 		std::cout << "Last name : ";
 		std::getline(std::cin, input);
 		if (std::cin.eof())
-			break;
+			return ;
 		lastname = input;
 	}
 	input = "";
@@ -36,7 +36,7 @@ void Contact::create_contact(int i)
 		std::cout << "Nickname : ";
 		std::getline(std::cin, input);
 		if (std::cin.eof())
-			break;
+			return ;
 		nickname = input;
 	}
 	input = "";
@@ -45,7 +45,7 @@ void Contact::create_contact(int i)
 		std::cout << "Phone number : ";
 		std::getline(std::cin, input);
 		if (std::cin.eof())
-			break;
+			return ;
 		phonenumber = input;
 	}
 	input = "";
@@ -54,7 +54,7 @@ void Contact::create_contact(int i)
 		std::cout << "Darkest secret : ";
 		std::getline(std::cin, input);
 		if (std::cin.eof())
-			break;
+			return ;
 		darkestsecret = input;
 	}
 	index = i;
@@ -63,7 +63,10 @@ void Contact::create_contact(int i)
 // Print all contacts
 void Contact::print_contacts(void)
 {
-	std::cout << "index : " << index << std::endl;
+	if (firstname.empty() && lastname.empty() && nickname.empty() && phonenumber.empty() && darkestsecret.empty())
+		return ;
+	std::cout << "===============================" << std::endl;
+	std::cout << "index : " << index + 1 << std::endl;
 	std::cout << "First name : " << firstname << std::endl;
 	std::cout << "Last name : " << lastname << std::endl;
 	std::cout << "Nickname : " << nickname << std::endl;
