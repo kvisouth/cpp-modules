@@ -15,7 +15,7 @@ class Contact
     public:
         Contact();
         ~Contact();
-        void add(void);
+        void create_contact(int i);
 
 };
 
