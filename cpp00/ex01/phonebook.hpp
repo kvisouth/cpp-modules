@@ -8,9 +8,7 @@
 class PhoneBook
 {
     private:
-        Contact contacts[8];    
-        int index;
-        const int max;
+        Contact contacts[8];
     public:
         PhoneBook();
         ~PhoneBook();

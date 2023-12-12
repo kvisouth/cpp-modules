@@ -6,7 +6,7 @@
 /*   By: kvisouth <kvisouth@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/01 17:24:37 by kvisouth          #+#    #+#             */
-/*   Updated: 2023/12/11 16:26:05 by kvisouth         ###   ########.fr       */
+/*   Updated: 2023/12/12 13:15:04 by kvisouth         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,11 @@ int main()
 		if (input == "EXIT")
 			break;
 
-		else if (input == "ADD"){
-			phonebook.add(); }
+		else if (input == "ADD")
+			phonebook.add();
 		
-		else if (input == "SEARCH"){
-			phonebook.search(); }
+		else if (input == "SEARCH")
+			phonebook.search();
 		
 		else
 			std::cout << "commands: ADD, SEARCH, EXIT" << std::endl;

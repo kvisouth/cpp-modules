@@ -65,9 +65,18 @@ void Contact::print_contacts(void)
 {
 	if (firstname.empty() && lastname.empty() && nickname.empty() && phonenumber.empty() && darkestsecret.empty())
 		return ;
-	std::cout << "===============================" << std::endl;
-	std::cout << "index : " << index + 1 << std::endl;
-	std::cout << "First name : " << firstname << std::endl;
-	std::cout << "Last name : " << lastname << std::endl;
-	std::cout << "Nickname : " << nickname << std::endl;
+	std::cout << std::setw(10) << index << "|";
+	if (firstname.length() > 10)
+		std::cout << firstname.substr(0, 9) << ".|";
+	else
+		std::cout << std::setw(10) << firstname << "|";
+	if (lastname.length() > 10)
+		std::cout << lastname.substr(0, 9) << ".|";
+	else
+		std::cout << std::setw(10) << lastname << "|";
+	if (nickname.length() > 10)
+		std::cout << nickname.substr(0, 9) << ".";
+	else
+		std::cout << std::setw(10) << nickname;
+	std::cout << std::endl;
 }
